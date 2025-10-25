@@ -64,4 +64,8 @@ a:focus, a:hover {
     transform: translate(-50%,-50%);
 }
 
+:user-invalid {
+    box-shadow: 0 0 3px red;
+}
+
 
