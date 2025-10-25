@@ -4,11 +4,13 @@
 
 * {
   margin: 0;
+  padding: 0;
 }
 
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+  overflow: hidden;
 }
 
 input, button, textarea, select {
@@ -26,12 +28,17 @@ h1, h2, h3, h4, h5, h6 {
   text-wrap: balance;
 }
 
-a {
+#image-holder a {
     color: white;
 }
 
 a:focus, a:hover {
     text-decoration: none;
+}
+
+#page-body {
+    display: flex;
+
 }
 
 #form-banner {
@@ -40,18 +47,21 @@ a:focus, a:hover {
 }
 
 #image-holder {
+    height: 100vh;
     position: relative;
     width: fit-content;
 }
 
 #image-holder p {
     position: absolute;
-    bottom: 10px;
+    bottom: 0px;
     color: white;
     width: fit-content;
-    font-size: xx-large; 
+    font-size: calc(10px + 0.5vw); 
     /* set font size in rem later */
 
     left: 50%;
     transform: translate(-50%,-50%);
 }
+
+
