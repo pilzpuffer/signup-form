@@ -1,0 +1,57 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+p {
+  text-wrap: pretty;
+}
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+
+a {
+    color: white;
+}
+
+a:focus, a:hover {
+    text-decoration: none;
+}
+
+#form-banner {
+    height: 100vh;
+    width: auto;   
+}
+
+#image-holder {
+    position: relative;
+    width: fit-content;
+}
+
+#image-holder p {
+    position: absolute;
+    bottom: 10px;
+    color: white;
+    width: fit-content;
+    font-size: xx-large; 
+    /* set font size in rem later */
+
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
