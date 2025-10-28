@@ -10,10 +10,15 @@
 <body>
     <div id="page-body">
         <div id="image-holder">
+            <div id="brand-card">
+                <img id="brand-logo" src="./logo.png">
+                <div>The Gentle Cow</div>
+            </div>
+
             <img id="form-banner" src="./cow.jpg">
             <p>Photo by <a href="https://unsplash.com/@3tnik?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">A. C.</a> on <a href="https://unsplash.com/photos/brown-cow-in-close-up-photography-uKbL3Vp5iKc?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>
         </div>
-        <form method="post">
+        <form method="POST">
             <label for="first-name">First Name</label>
             <input 
                 type="text" 
@@ -64,7 +69,7 @@
                 required>
 
             <button type="submit" id="subscribe">Subscribe</button>
-            <label for="subscribe">Already subscribed? <a href="./index.html">Log in</a> to manage your subscription</label>
+            <div">Already subscribed? <a href="./index.html">Log in</a> to manage your subscription</div>
         </form>
     </div>
 </body>

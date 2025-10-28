@@ -1,3 +1,12 @@
+@font-face {
+    font-family: 'title';
+    src: url('./fonts/frederickathegreat-regular-webfont.woff2') format('woff2'),
+         url('./fonts/frederickathegreat-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 *, *::before, *::after {
   box-sizing: border-box;
 }
@@ -62,6 +71,25 @@ a:focus, a:hover {
 
     left: 50%;
     transform: translate(-50%,-50%);
+}
+
+#brand-card {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 15%;
+
+    font-family: 'title';
+    font-size: calc(10px + 4vh);
+
+    justify-content: center;
+    align-content: center;
+    gap: 1rem;
+}
+
+#brand-card > div {
+    align-self: center;
 }
 
 :user-invalid {
