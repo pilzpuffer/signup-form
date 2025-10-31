@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'Fredericka';
-    src: url('./fonts/frederickathegreat-regular-webfont.woff2') format('woff2'),
-         url('./fonts/frederickathegreat-regular-webfont.woff') format('woff');
+    src: url('./fonts/Fredericka/frederickathegreat-regular-webfont.woff2') format('woff2'),
+         url('./fonts/Fredericka/frederickathegreat-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -11,7 +11,6 @@
     font-family: 'Cormorant';
     src: url('./fonts/Garamond/cormorantgaramond-variablefont_wght-webfont.woff2') format('woff2'),
          url('./fonts/Garamond/cormorantgaramond-variablefont_wght-webfont.woff') format('woff');
-    font-weight: normal;
     font-style: normal;
 }
 
@@ -19,8 +18,7 @@
     font-family: 'Cormorant';
     src: url('./fonts/Garamond/cormorantgaramond-italic-variablefont_wght-webfont.woff2') format('woff2'),
          url('./fonts/Garamond/cormorantgaramond-italic-variablefont_wght-webfont.woff') format('woff');
-    font-weight: italic;
-    font-style: normal;
+    font-style: italic;
 }
 
 :root {
