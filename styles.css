@@ -78,6 +78,12 @@ a:focus, a:hover {
     height: 100vh;
     position: relative;
     width: fit-content;
+
+    user-select: none;
+}
+
+#image-holder img {
+    pointer-events: none;
 }
 
 #image-holder p {
