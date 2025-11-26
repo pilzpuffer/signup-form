@@ -52,8 +52,13 @@ p, h1, h2, h3, h4, h5, h6 {
 p {
   text-wrap: pretty;
 }
+
 h1, h2, h3, h4, h5, h6 {
   text-wrap: balance;
+}
+
+label {
+    display: block;
 }
 
 #image-holder a {
@@ -120,6 +125,32 @@ a:focus, a:hover {
 
 #brand-card > div {
     align-self: center;
+}
+
+#main-content-holder {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 2em;
+}
+
+#intro {
+    max-width: 80ch;
+}
+
+#intro > div + div {
+    padding-top: 1rem;
+}
+
+label {
+    padding-top: 1em;
+}
+
+#full-name, #contacts, #password-check {
+    display: flex;
+    gap: 2em;
 }
 
 :user-invalid {

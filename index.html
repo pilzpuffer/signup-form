@@ -21,59 +21,71 @@
 
         <div id="main-content-holder">
             <div id="intro">
-                <div>At The Gentle Cow, caring for our herd is at the heart of everything we do. Our cows roam freely, enjoy a rich grass-based diet, and even have their own curated <a href="https://www.youtube.com/watch?v=lXKDu6cdXLI">music playlist</a>. Happy cows give better milk - and we’re proud to offer you some of the freshest, healthiest milk you can find.</div>
+                <div>At 'The Gentle Cow' farm, caring for our herd is at the heart of everything we do. Our cows roam freely, enjoy a rich grass-based diet, and even have their own curated <a href="https://www.youtube.com/watch?v=lXKDu6cdXLI">music playlist</a>. Happy cows give better milk - and we’re proud to offer you some of the freshest, healthiest milk you can find.</div>
                 <div>If you'd like to explore our other dairy products, feel free to browse our <a href="./index.html">main website</a>!</div>
             </div>
             <form method="POST">
                 <div>Leave your details below to subscribe and receive the freshest milk delivered daily.</div>
-                <div>
-                    <label for="first-name">First Name</label>
-                    <input
-                        type="text"
-                        id="first-name"
-                        name="first-name"
-                        autocomplete="given-name">
-                    <label for="last-name">Last Name</label>
-                    <input
-                        type="text"
-                        id="last-name"
-                        name="last-name"
-                        autocomplete="family-name">
+                <div id="full-name">
+                    <div>
+                        <label for="first-name">First Name</label>
+                        <input
+                            type="text"
+                            id="first-name"
+                            name="first-name"
+                            autocomplete="given-name">
+                    </div>
+                    <div>
+                        <label for="last-name">Last Name</label>
+                        <input
+                            type="text"
+                            id="last-name"
+                            name="last-name"
+                            autocomplete="family-name">
+                    </div>
                 </div>
-                <div>
-                    <label for="email">Email</label>
-                    <input
-                        type="email"
-                        id="email"
-                        name="email"
-                        autocomplete="email">
-                    <label for="phone">Phone Number</label>
-                    <input
-                        type="tel"
-                        id="phone"
-                        name="phone"
-                        autocomplete="mobile">
+                <div id="contacts">
+                    <div>
+                        <label for="email">Email</label>
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            autocomplete="email">
+                    </div>
+                    <div>
+                        <label for="phone">Phone Number</label>
+                        <input
+                            type="tel"
+                            id="phone"
+                            name="phone"
+                            autocomplete="mobile">
+                    </div>
                 </div>
-                <div>
-                    <label for="password">Password</label>
-                    <input
-                        type="password"
-                        id="password"
-                        name="password"
-                        minlength="6"
-                        maxlength="30"
-                        pattern="^((?=\S*?[A-Z])(?=\S*?[a-z])(?=\S*?[0-9]).{6,})\S$"
-                        required
-                        autocomplete="new-password">
-                    <label for="confirm-password">Confirm Password</label>
-                    <input
-                        type="password"
-                        id="confirm-password"
-                        name="confirm-password"
-                        minlength="6"
-                        maxlength="30"
-                        pattern="^((?=\S*?[A-Z])(?=\S*?[a-z])(?=\S*?[0-9]).{6,})\S$"
-                        required>
+                <div id="password-check">
+                    <div>
+                        <label for="password">Password</label>
+                        <input
+                            type="password"
+                            id="password"
+                            name="password"
+                            minlength="6"
+                            maxlength="30"
+                            pattern="^((?=\S*?[A-Z])(?=\S*?[a-z])(?=\S*?[0-9]).{6,})\S$"
+                            required
+                            autocomplete="new-password">
+                    </div>
+                    <div>
+                        <label for="confirm-password">Confirm Password</label>
+                        <input
+                            type="password"
+                            id="confirm-password"
+                            name="confirm-password"
+                            minlength="6"
+                            maxlength="30"
+                            pattern="^((?=\S*?[A-Z])(?=\S*?[a-z])(?=\S*?[0-9]).{6,})\S$"
+                            required>
+                    </div>
                 </div>
                 <button type="submit" id="subscribe">Subscribe</button>
 
