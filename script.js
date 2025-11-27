@@ -11,16 +11,16 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     allInput.forEach((input) => {
+        input.oninvalid = function(event) {
+            event.target.setCustomValidity(errorHolder[`${event.target.id}`]);
+        }
+
         input.onchange = function(event) {
             event.target.setCustomValidity("");
         }
 
-        input.focusout = function(event) {
+        input.oninput = function(event) {
             event.target.setCustomValidity("");
-        }
-
-        input.oninvalid = function(event) {
-            event.target.setCustomValidity(errorHolder[`${event.target.id}`]);
         }
     })
 })
