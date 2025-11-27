@@ -23,6 +23,7 @@
 
 :root {
     --brand-card-color: rgba(250, 235, 215, 0.8);
+    --descriptive-text: clamp(1.7rem, 1vw + 0.5rem, 3rem);
 }
 
 *, *::before, *::after {
@@ -55,10 +56,6 @@ p {
 
 h1, h2, h3, h4, h5, h6 {
   text-wrap: balance;
-}
-
-label {
-    display: block;
 }
 
 #image-holder a {
@@ -130,15 +127,16 @@ a:focus, a:hover {
 #main-content-holder {
     display: flex;
     flex-direction: column;
-
     justify-content: center;
     align-items: flex-start;
-    padding: 0 clamp(1.7rem, 1vw + 0.5rem, 3rem);
+
+    width: 100%;
+    padding: 0 var(--descriptive-text);
 }
 
 #intro, form>div:first-child {
     font-weight: bold;
-    font-size: clamp(1.7rem, 1vw + 0.5rem, 3rem);
+    font-size: var(--descriptive-text);
 }
 
 #intro {
@@ -150,7 +148,12 @@ a:focus, a:hover {
     padding-top: 1rem;
 }
 
+form {
+    font-size: clamp(1.2rem, 0.5vw + 0.5rem, 1.5rem);  
+}
+
 label {
+    display: block;
     padding-top: 1rem;
 }
 
