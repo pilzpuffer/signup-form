@@ -69,6 +69,14 @@ a:focus, a:hover {
     text-decoration: none;
 }
 
+#river {
+    position: absolute;
+    bottom: 0;
+    left: 55%;
+
+    pointer-events: none;
+}
+
 #page-body {
     display: flex;
 
@@ -138,6 +146,18 @@ a:focus, a:hover {
     background-color: var(--main-page-color);
 }
 
+#main-content-holder {
+    color: var(--box-border);
+}
+
+#main-content-holder a {
+    color: var(--box-border);
+}
+
+#main-content-holder a:visited {
+    color: rgb(198, 112, 57)
+}
+
 #intro, form>div:first-child {
     font-weight: bold;
     font-size: var(--descriptive-text);
@@ -153,6 +173,7 @@ a:focus, a:hover {
 }
 
 form {
+    position: relative;
     font-size: clamp(1.2rem, 0.5vw + 0.5rem, 1.5rem);  
 }
 
