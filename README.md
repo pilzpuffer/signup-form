@@ -4,6 +4,8 @@ The goal of this project was to become familiar with how forms can be set up and
 
 This really helped me to become more confident with handling forms, as there's quite a few tricks to actually setting them up and making them useful - so this project was great for my learning journey.
 
+I'm not quite happy with the overall design for this project, but I didn't want to stray too far from the initial 'design file', so I will leave it as it is. If I were to improve this project, I would revamp the entire structure of the page.
+
 
 ## ACKNOWLEDGEMENTS
 
